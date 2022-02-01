@@ -6,9 +6,9 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import {NgbCollapseModule} from '@ng-bootstrap/ng-bootstrap';
 import {IconModule} from '@visurel/iconify-angular';
-import { HomeComponent } from './components/home/home.component'
+import { HomeComponent } from './components/home/home.component';
 import {NgxTypedJsModule} from 'ngx-typed-js';
-import { AboutComponent } from './about/about.component'
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
