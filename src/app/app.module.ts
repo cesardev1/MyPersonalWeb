@@ -9,13 +9,18 @@ import {IconModule} from '@visurel/iconify-angular';
 import { HomeComponent } from './components/home/home.component';
 import {NgxTypedJsModule} from 'ngx-typed-js';
 import { AboutComponent } from './components/about/about.component';
+import { CompetencesComponent } from './components/competences/competences.component';
+import { EducationComponent } from './components/education/education.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    CompetencesComponent,
+    EducationComponent
   ],
   imports: [
     BrowserModule,
@@ -23,6 +28,7 @@ import { AboutComponent } from './components/about/about.component';
     NgbCollapseModule,
     IconModule,
     NgxTypedJsModule,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
