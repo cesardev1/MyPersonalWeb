@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+/* Color Theme Swatches in Hex */
+.principal-blue { color: #7B89A6; }
+.principal-softblue { color: #B0BDD9; }
+.principal-gray { color: #343A40; }
+.principal-orange { color: #A68877; }
+.principal-black { color: #0D0D0D; }
+
+/* Color Theme Swatches in RGBA */
+.Diagrama-1-rgba { color: rgba(122, 137, 165, 1); }
+.Diagrama-2-rgba { color: rgba(175, 189, 216, 1); }
+.Diagrama-3-rgba { color: rgba(51, 58, 63, 1); }
+.Diagrama-4-rgba { color: rgba(165, 136, 119, 1); }
+.Diagrama-5-rgba { color: rgba(12, 12, 12, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Diagrama-1-hsla { color: hsla(219, 19, 56, 1); }
+.Diagrama-2-hsla { color: hsla(219, 34, 76, 1); }
+.Diagrama-3-hsla { color: hsla(208, 10, 22, 1); }
+.Diagrama-4-hsla { color: hsla(22, 20, 55, 1); }
+.Diagrama-5-hsla { color: hsla(0, 0, 5, 1); }
+
+
