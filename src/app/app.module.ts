@@ -12,6 +12,10 @@ import { AboutComponent } from './components/about/about.component';
 import { CompetencesComponent } from './components/competences/competences.component';
 import { EducationComponent } from './components/education/education.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ProjectsComponent } from './components/projects/projects.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +24,9 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     HomeComponent,
     AboutComponent,
     CompetencesComponent,
-    EducationComponent
+    EducationComponent,
+    ProjectsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -29,6 +35,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     IconModule,
     NgxTypedJsModule,
     FontAwesomeModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
