@@ -1,6 +1,7 @@
 .bar{
-    padding-left: 10px;
-    padding-right: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 .texto{
     margin: 0 10px 0 0;

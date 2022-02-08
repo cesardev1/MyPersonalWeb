@@ -1,5 +1,5 @@
-<header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
+<header class="bar">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3 bar" >
         <a class="navbar-brand marca" [routerLink]="'.'"><ic-icon [icon]="Home" size="30"></ic-icon> CesarDev</a>
 
         <button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">
@@ -8,19 +8,19 @@
         <div [ngbCollapse]="isMenuCollapsed"   class="collapse navbar-collapse " >
             <ul class="navbar-nav" placement="right" >
                 <li class="nav-item active">
-                    <a class="nav-link" [routerLink]="'.'" (click)="isMenuCollapsed = true"> 
+                    <a class="nav-link" href="#about" (click)="isMenuCollapsed = true"> 
                         <ic-icon [icon]="User" size=20></ic-icon> ACERCA DE MI</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" [routerLink]="'.'" (click)="isMenuCollapsed = true">
+                    <a class="nav-link" href="#competences" (click)="isMenuCollapsed = true">
                         <ic-icon [icon]="Briefcase" size=20></ic-icon> HABILIDADES</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" [routerLink]="'.'" (click)="isMenuCollapsed = true">
+                    <a class="nav-link" href="#cv" (click)="isMenuCollapsed = true">
                         <ic-icon [icon]="File" size=""></ic-icon> CV</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" [routerLink]="'.'" (click)="isMenuCollapsed = true">
+                    <a class="nav-link" href="#portafolio" (click)="isMenuCollapsed = true">
                         <ic-icon [icon]="Book" size=""></ic-icon> PORTAFOLIO</a>
                 </li>
                 <li class="nav-item">
@@ -28,7 +28,7 @@
                         <ic-icon [icon]="Newspaper" size=""></ic-icon> BLOG</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" [routerLink]="'.'" (click)="isMenuCollapsed = true">
+                    <a class="nav-link" href="#contact" (click)="isMenuCollapsed = true">
                         <ic-icon [icon]="Envelope" size=""></ic-icon> CONTACTAME</a>
                 </li>
             </ul>

@@ -1,0 +1,6 @@
+.contorno{
+    border: 10px black;
+    border-radius: 10px;
+    width: 300px;
+    height: 200px;
+}

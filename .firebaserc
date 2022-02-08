@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "web-personal-3c712": {
+      "hosting": {
+        "personal_web": [
+          "web-personal-3c712"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "web-personal-3c712"
+  }
+}
