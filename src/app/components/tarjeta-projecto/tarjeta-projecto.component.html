@@ -1,11 +1,11 @@
 <div class="row">
     <div class="col-sm-4">
-        <div class="card">
+        <div class="card " style="height: 300px; width: 300px;">
             <div class="card-body">
                 <ngb-carousel *ngIf="true">
                     <ng-template class="center" ngbSlide *ngFor="let image of projectoEntrante.images">
                         <div class="picsum-img-wrapper">
-                            <img [src]="image.directorio" style="height: 18rem;"  alt="Random first slide">
+                            <img [src]="image.directorio" style="height:100%; width: 100%;" alt="Random first slide">
                         </div>
                     </ng-template>
                 </ngb-carousel>
