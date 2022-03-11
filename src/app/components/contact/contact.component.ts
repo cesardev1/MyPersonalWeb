@@ -30,7 +30,6 @@ export class ContactComponent implements OnInit {
   ngOnInit(): void {
   }
   agregar(){
-    console.log(this.agregarContacto);
     const contacto: Contact={
       name:this.agregarContacto.get('name')?.value,
       email:this.agregarContacto.get('email')?.value,
@@ -44,15 +43,10 @@ export class ContactComponent implements OnInit {
     }
 
     this._contactoServices.saveContact(contacto).subscribe((data)=>{
-      console.log('envio exitoso')
       alert("Mensaje enviado con exito!!!");
       this.agregarContacto.reset();
-      this.agregarContacto.reset();
-      this.agregarContacto.reset();
-      this.agregarContacto.reset();
     },(error)=>{
-      console.log(error);
-      alert("")
+      alert(error.message)
     })
   }
 
