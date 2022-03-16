@@ -1,0 +1,97 @@
+{
+    "home":{
+        "iam":"I'm a developer"
+    },
+    "navbar":{
+        "about":"ABOUT ME",
+        "skills":"SKILLS",
+        "cv":"CV",
+        "portfolio":"PORTFOLIO",
+        "blog":"BLOG",
+        "contact":"CONTACT ME"
+    },
+    "about":{
+        "title":"About Me",
+        "secondTitle":"Xamarin & Web Developer",
+        "Interest":"Interested in science, technology and everything that seems to have a far-fetched explanation, because everything can be simplified. Passionate about Mobile and Web programming.",
+        "location":"Michoacán, México",
+        "age":"30 years",
+        "degree":"Computer Engineering Truncated(5th semester)",
+        "search":"I am looking for a job that will always allow me to experiment, something that allows me to give and receive experience to grow together"
+    },
+    "skill":{
+        "title":"Skills",
+        "tech":"Technologies",
+        "tools":"Tools",
+        "soft":"Soft Skill"
+    },
+    "education":{
+        "title":"Education",
+        "University":{
+            "title":"Computer Engineering",
+            "description":"Truncated Bachelor's Degree Universidad Michoacana de San Nicolás de Hidalgo",
+            "period":"2010-2013"
+        },
+        "bachelor":{
+            "title":"High School",
+            "description":"Computer technician Administrative Cemsad 14 Capula",
+            "period":"2007 - 2010"
+        }     
+    },
+    "experience":{
+        "title":"Experience",
+        "freelance":{
+            "position":"Freelance Programmer",
+            "location":"Mexico",
+            "period":"2020 - (Current)",
+            "target1.title":"",
+            "target1":"",
+            "target2.title":"",
+            "target2":"",
+            "tech":""
+        },
+        "quiron":{
+            "position":"Xamarin Developer",
+            "location":"Company: CAPSA, in Michoacán, Mx",
+            "period":"2019 - 2020 (9 Months)",
+            "target1.title":"target 1",
+            "target1":"Develop an application to contact a nearby doctor by location on a map.",
+            "target2.title":"target 2",
+            "target2":"Create the web services that would feed the application",
+            "tech.title":"Technologies:",
+            "tech":"Xamarin, Laravel, MySql "
+        }
+    },
+    "cv":{
+        "title":"Portfolio",
+        "quiron":{
+            "title.title":"Project name:",
+            "title":"Quiron",
+            "description.title":"Description:",
+            "description":"Application for locating and contacting medical specialists through the use of maps.",
+            "tech.title":"Technologies:",
+            "tech":"XAMARIN,Mysql,laravel"
+        },
+        "personal":{
+            "title.title":"Project name:",
+            "title":"CesarDev",
+            "description.title":"Description:",
+            "description":"Personal profile page for resume and portfolio use as well as integration of a personal blog.",
+            "tech.title":"Technologies:",
+            "tech":"Angular"
+        },
+        "code":"View code"
+    },
+    "contact":{
+        "title":"Contact",
+        "intro":"Feel free to contact me",
+        "name":"Name:",
+        "pname":"Enter your name",
+        "email":"E-mail:",
+        "pmail":"Enter your e-mail",
+        "subject":"Subject",
+        "psubject":"Asunto:",
+        "message":"Message:",
+        "send":"Send"
+    }
+}

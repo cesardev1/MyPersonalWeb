@@ -6,6 +6,8 @@ import book from '@iconify/icons-mdi/book-account-outline'
 import newspaper from '@iconify/icons-mdi/newspaper'
 import envelope from '@iconify/icons-mdi/email-variant'
 import home from '@iconify/icons-mdi/memory'
+import { TranslateService } from '@ngx-translate/core';
+import { TraductorServices } from 'src/app/Services/translate.service';
 
 @Component({
   selector: 'app-navbar',
@@ -22,7 +24,10 @@ export class NavbarComponent implements OnInit {
   Newspaper=newspaper;
   Envelope=envelope;
 
-  constructor() { }
+  constructor(private translate:TranslateService) {
+    this.translate.setDefaultLang(TraductorServices.activeLang);
+   }
+   
   public isMenuCollapsed=true;
   ngOnInit(): void {
   }

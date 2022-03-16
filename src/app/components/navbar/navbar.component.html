@@ -9,27 +9,27 @@
             <ul class="navbar-nav" placement="right" >
                 <li class="nav-item active">
                     <a class="nav-link" href="#about" (click)="isMenuCollapsed = true"> 
-                        <ic-icon [icon]="User" size=20></ic-icon> ACERCA DE MI</a>
+                        <ic-icon [icon]="User" size=20></ic-icon> {{ 'navbar.about' |translate}} </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#competences" (click)="isMenuCollapsed = true">
-                        <ic-icon [icon]="Briefcase" size=20></ic-icon> HABILIDADES</a>
+                        <ic-icon [icon]="Briefcase" size=20></ic-icon> {{'navbar.skills'|translate}}</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#cv" (click)="isMenuCollapsed = true">
-                        <ic-icon [icon]="File" size=""></ic-icon> CV</a>
+                        <ic-icon [icon]="File" size=""></ic-icon>{{'navbar.cv'|translate}} </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#portafolio" (click)="isMenuCollapsed = true">
-                        <ic-icon [icon]="Book" size=""></ic-icon> PORTAFOLIO</a>
+                        <ic-icon [icon]="Book" size=""></ic-icon>{{'navbar.portfolio'|translate}}</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" [routerLink]="'.'" (click)="isMenuCollapsed = true">
-                        <ic-icon [icon]="Newspaper" size=""></ic-icon> BLOG</a>
+                        <ic-icon [icon]="Newspaper" size=""></ic-icon>{{'navbar.blog'|translate}}</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#contact" (click)="isMenuCollapsed = true">
-                        <ic-icon [icon]="Envelope" size=""></ic-icon> CONTACTAME</a>
+                        <ic-icon [icon]="Envelope" size=""></ic-icon> {{'navbar.contact'|translate}}</a>
                 </li>
             </ul>
         </div>

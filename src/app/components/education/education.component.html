@@ -4,51 +4,46 @@
         <span class="bar-title mb-5"></span>
         <div class="row">
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                <h4><strong>Educación</strong></h4>
+                <h4><strong>{{'education.title'|translate}}</strong></h4>
 
                 <ul class="timeline">
                     <li>
-                        <h5><strong>Ingeniería en computación </strong> </h5>
-                        <em class="font-italic">Licenciatura trunca<br> Universidad Michoacana de San Nicolás de Hidalgo</em>
-                        <p class="year p-2 d-flex justify-content-center">2010 - 2013</p>
+                        <h5><strong>{{'education.University.title'|translate}} </strong> </h5>
+                        <em class="font-italic">{{'education.University.description'|translate}}</em>
+                        <p class="year p-2 d-flex justify-content-center">{{'education.University.period'|translate}}</p>
                     </li>
                     <li>
-                        <h5>Bachillerato</h5>
-                        <em class="font-italic"> Técnico en informática Administrativa <br> Cemsad 14 Capula</em>
-                        <p class="year p-2 d-flex justify-content-center">2007 - 2010</p>
+                        <h5>{{'education.bachelor.title'|translate}}</h5>
+                        <em class="font-italic"> {{'education.bachelor.description'|translate}} </em>
+                        <p class="year p-2 d-flex justify-content-center">{{'education.bachelor.period'|translate}}</p>
                     </li>
                 </ul>
             </div>
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                <h4><strong>Experiencia</strong></h4>
+                <h4><strong>{{'experience.title'|translate}}</strong></h4>
                 <ul class="timeline">
                     <li>
-                        <h5>Programador freelance</h5>
-                        <em>Mexico</em>
+                        <h5>{{'experience.freelance.position'|translate}} </h5>
+                        <em>{{'experience.freelance.location'|translate}}</em>
                         <div class="d-flex flex-row">
-                            <p class="year p-2 d-flex justify-content-center">2020 - (Actual)</p>
+                            <p class="year p-2 d-flex justify-content-center">{{'experience.freelance.period'|translate}}</p>
                             <button (click)="detailOnClick('freelanceScotfy_detail')" type="button" class="btn btn-primary" disabled>+Detalles</button>
                         </div>
                         <p *ngIf="freelanceScotfyIsShown">
 
-                            <strong>Tâche 1:</strong> Mise en place d'un gestionnaire de thèmes (couleurs, logo). <br>
-                            <strong>Tâche 2:</strong> Mise en place d'un gestionnaire de dossiers virtuels qui peuvent contenir des apps Qlik Sense.<br>
-                            <strong>Tâche 3:</strong> Développement d'une interface de sauvegarde des ressources.<br>
-                            <strong>Tâche 4:</strong> Création de pages web personnalisables : Qlik Sense Mashups (En cours).<br>
-                            <strong>Téchnologies:</strong> Java, J2EE, Angular 11, Angular Materials, pgSql, Qlik Sense
                         </p>
                     </li>
                     <li>
-                        <h5>Programador Xamarin</h5>
-                        <em>CAPSA, Michoacán, Mx</em>
+                        <h5>{{'experience.quiron.position'|translate}}</h5>
+                        <em>{{'experience.quiron.location'|translate}}</em>
                         <div class="d-flex flex-row">
-                            <p class="year p-2 d-flex justify-content-center">2019 - 2020 (9 Meses)</p>
+                            <p class="year p-2 d-flex justify-content-center">{{'experience.quiron.period'|translate}}</p>
                             <button (click)="detailOnClick('freelance_detail')" type="button" class="btn btn-primary">+Detalles</button>
                         </div>
                         <p *ngIf="freelanceIsShown">
-                            <strong>Misión  1:</strong> Desarrollar una aplicación para contactar a un médico cercano mediante la ubicación en un mapa<br>
-                            <strong>Misión  2:</strong> Crear los servicios web que alimentarían a la aplicación<br>
-                            <strong>Tecnologías:</strong> Xamarin, Laravel, MySql
+                            <strong>{{'experience.quiron.target1.title'|translate}} :</strong>{{'experience.quiron.target1'|translate}}<br>
+                            <strong>{{'experience.quiron.target2.title'|translate}} :</strong>{{'experience.quiron.target2'|translate}}<br>
+                            <strong>{{'experience.quiron.tech.title'|translate}}</strong> {{'experience.quiron.tech'|translate}}
                         </p>
                     </li>
                     

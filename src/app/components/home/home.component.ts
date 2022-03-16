@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
+
+import {TraductorServices} from '../../Services/translate.service'
 
 @Component({
   selector: 'app-home',
@@ -7,8 +10,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  
+
   background='../../../assets/Images/circuito_wall.jpg'
-  constructor() { }
+  constructor(private translate:TranslateService) {
+    this.translate.setDefaultLang(TraductorServices.activeLang)
+   }
   
 
   ngOnInit(): void {

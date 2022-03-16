@@ -15,8 +15,11 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TarjetaProjectoComponent } from './components/tarjeta-projecto/tarjeta-projecto.component'
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { BtnTranslateComponent } from './components/btn-translate/btn-translate.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +32,7 @@ import { TarjetaProjectoComponent } from './components/tarjeta-projecto/tarjeta-
     ProjectsComponent,
     ContactComponent,
     TarjetaProjectoComponent,
+    BtnTranslateComponent,
   ],
   imports: [
     BrowserModule,
@@ -40,6 +44,15 @@ import { TarjetaProjectoComponent } from './components/tarjeta-projecto/tarjeta-
     ReactiveFormsModule,
     HttpClientModule,
     NgbCarouselModule,
+    TranslateModule.forRoot({
+      loader:{
+        provide:TranslateLoader,
+        useFactory:(http:HttpClient)=>{
+          return new TranslateHttpLoader(http);
+        },
+        deps:[HttpClient]
+      }
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
