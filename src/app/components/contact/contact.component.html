@@ -12,18 +12,25 @@
                 </div>
             </div>
             <div class="col-md-9">
-                <form class="contact-form" [formGroup]="agregarContacto" (ngSubmit)="agregar()">
+                <form class="contact-form" [formGroup]="agregarContacto" (ngSubmit)="agregar(content)">
                     <div class="form-group">
                         <label class="control-label col-sm-2" for="identite">{{'contact.name'|translate}}</label>
                         <div class="col-sm-10">
                             <input formControlName="name" type="text" class="form-control" id="name" [placeholder]="'contact.pname'|translate"
                                 name="fname">
+                            <div *ngIf="agregarContacto.get('name')?.dirty && agregarContacto.get('name')?.invalid" class="fieldInvalid" >
+                                *El nombre es requerido
+                            </div>
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="control-label col-sm-2" for="email">{{'contact.email'|translate}}</label>
                         <div class="col-sm-10">
                             <input formControlName="email" type="email" class="form-control" id="email" [placeholder]="'contact.pmail'|translate" name="email">
+                            <div *ngIf="agregarContacto.get('email')?.dirty && agregarContacto.get('email')?.errors" class="fieldInvalid" >
+                                <p *ngIf="agregarContacto.get('email')?.hasError('required')">*El Email es requerido</p>
+                                <p *ngIf="agregarContacto.get('email')?.hasError('pattern')">*El Email no es valido</p>
+                            </div>
                         </div>
                     </div>
                     <div class="form-group">
@@ -31,6 +38,10 @@
                         <div class="col-sm-10">
                             <input formControlName="subject" type="text" class="form-control" id="subject" [placeholder]="'contact.psubject'|translate"
                                 name="object">
+
+                                <div *ngIf="agregarContacto.get('name')?.dirty && agregarContacto.get('name')?.invalid" class="fieldInvalid" >
+                                    *El Asunto es requerido
+                                </div>
                         </div>
                     </div>
                   
@@ -38,11 +49,18 @@
                         <label class="control-label col-sm-2" for="comment">{{'contact.message'|translate}}</label>
                         <div class="col-sm-10">
                             <textarea formControlName="comment" class="form-control" rows="5" id="comment"></textarea>
+                            <div *ngIf="agregarContacto.get('name')?.dirty && agregarContacto.get('name')?.invalid" class="fieldInvalid" >
+                                *El nombre es requerido
+                            </div>
                         </div>
                     </div>
                     <div class="form-group">
-                        <div class="col-sm-offset-2 col-sm-10">
-                            <button type="submit" class="btn btn-default">{{'contact.send'|translate}}</button>
+                        <div class="col-sm-offset-2 col-sm-10 mt-5">
+                            <button type="submit" [disabled]=agregarContacto.invalid [@changeButton]="btnState" class="btn" id="btnSend">
+                                <i [@rotateArrow]="btnState"><mat-icon>send</mat-icon></i>
+                                <span class="text">{{'contact.send'|translate}}</span>
+                                <span [@loading]="btnState" class="loading-animate"></span>
+                            </button>
                         </div>
                     </div>
                 </form>
@@ -50,4 +68,21 @@
         </div>
     </div>
 
+
 </section>
+
+
+
+<!-- Ventana Modal -->
+<ng-template #content let-c="close" let-d="dismiss">
+    <div class="modal-header">
+      <h4 class="modal-title" style="color: black;" id="modal-basic-title">Mensaje</h4>
+      <button type="button" class="btn-close" aria-label="Close" (click)="d('Cross click')"></button>
+    </div>
+    <div class="modal-body">
+      <p>{{MessageModal}}</p>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-outline-primary" style="background-color: #149ddd;" (click)="c('Save click')">Cerrar</button>
+    </div>
+  </ng-template>

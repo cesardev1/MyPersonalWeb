@@ -1,15 +1,15 @@
 
 export interface Contact{
-    id?:number;
-    name:string;
-    email:string;
-    telephone:string;
-    rol:string;
-    section:string;
-    subject:string;
-    text:string;
-    to:string;
-    date_creation:Date;
+    Id?:number;
+    Name:string;
+    Email:string;
+    Telephone:string;
+    Rol:string;
+    Section:string;
+    Subject:string;
+    Text:string;
+    To:string;
+    Date_creation:Date;
 }
 
     // "name":"prueba",

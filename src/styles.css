@@ -22,4 +22,12 @@
 .Diagrama-4-hsla { color: hsla(22, 20, 55, 1); }
 .Diagrama-5-hsla { color: hsla(0, 0, 5, 1); }
 
+/* Bootstrap Icons */
+/* @import "..bootstrap-icons/font/bootstrap-icons.css"; */
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 
+
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
