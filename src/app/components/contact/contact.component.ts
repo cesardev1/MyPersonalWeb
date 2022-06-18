@@ -92,15 +92,13 @@ export class ContactComponent implements OnInit {
     this.btnState = 'active';
 
     this.contacto = this.getDataForm();
-    console.log(this.contacto);
-
+    
     this._contactoServices.saveContact(this.contacto!).subscribe((data) => {
       this.agregarContacto.reset();
       this.btnState = 'inactive';
       this.MessageModal = 'Mensaje enviado con éxito en breve nos contactaremos con usted';
       this.modalService.open(content);
     }, (error) => {
-      alert(error.message);
       this.btnState = 'inactive';
       this.MessageModal = 'Error al enviar el mensaje';
       this.modalService.open(content);
@@ -117,7 +115,7 @@ export class ContactComponent implements OnInit {
       Rol: 'client',
       Section: 'contact',
       Subject: this.agregarContacto.get('subject')?.value,
-      Text: this.agregarContacto.get('comment')?.value,
+      Message: this.agregarContacto.get('comment')?.value,
       To: 'my',
       Date_creation: new Date()
     };
