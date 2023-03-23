@@ -13,7 +13,8 @@
     display: block;
 }
 h1{
-    color: #fff; 
+    text-align: center;
+    color: var(--principal-gray); 
 }
 #home p span {
     color: #fff;

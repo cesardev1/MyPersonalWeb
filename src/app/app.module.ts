@@ -12,7 +12,13 @@ import { AboutComponent } from './components/about/about.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { TarjetaProjectoComponent } from './components/tarjeta-projecto/tarjeta-projecto.component'
+import { LottieModule } from 'ngx-lottie';
+import player from 'lottie-web'
 
+export function playerFactory()
+{
+  return import('lottie-web');
+}
 
 // modules
 import {NgbCollapseModule,NgbCarouselModule} from '@ng-bootstrap/ng-bootstrap';
@@ -25,7 +31,7 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { BtnTranslateComponent } from './components/btn-translate/btn-translate.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatIconModule} from '@angular/material/icon'
+import {MatIconModule} from '@angular/material/icon';
 //import {} from '@angular/animations'
 
 @NgModule({
@@ -62,6 +68,7 @@ import {MatIconModule} from '@angular/material/icon'
     }),
     BrowserAnimationsModule,
     MatIconModule,
+    LottieModule.forRoot({ player:playerFactory}),
   ],
   providers: [],
   bootstrap: [AppComponent]
